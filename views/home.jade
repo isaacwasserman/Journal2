@@ -1,0 +1,22 @@
+html
+  head
+    link(rel="stylesheet", href="css/style.css")
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no, maximum-scale=1', media='(device-height: 568px)')
+  body(onload="init();", onclick="maptype();")
+    div(id="not", data-0="top: 0%; opacity:1", data-1000="top: -50%; opacity:0")
+      #photodiv
+      video(class="instamage" id="video" src=latest autoplay loop)
+    div(id="content")
+      div(id="title")
+        h1= user
+        h4= location
+      p= caption
+      div(class="map" onclick="maptype();")
+        iframe(id="map")
+    
+    p.location=location
+    p.mediatype= mediatype
+    p#url= latest
+    
+    script(src="js/skrollr.js")
+    script(src="js/sticky.js")

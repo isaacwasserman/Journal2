@@ -1,0 +1,127 @@
+body {
+  margin: 0px;
+  background-color: black;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+#not {
+  top: 0px;
+  position: fixed;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#photodiv {
+  top: -500px;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center center !important;
+  height: 100%;
+  width: 90%;
+  z-index: -15;
+  margin: 0 auto;
+}
+
+#content {
+  position: absolute;
+  left: -5px;
+  z-index: -8;
+  top: 100%;
+  margin: 6px;
+  width: calc(100% - 20px);
+  background-color: White;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-filter: drop-shadow(2px 2px 20px black);
+}
+
+#title {
+  height: 10%;
+  position: fixed;
+  top: -30px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: .5s;
+  padding: 20px;
+  padding-top: 3px;
+  width: 100%;
+  padding-top: 25px;
+  left: -6px;
+  -webkit-filter: drop-shadow(2px 2px 5px black);
+  -moz-filter: drop-shadow(2px 2px 5px black);
+  min-height: 75px;
+}
+
+h1 {
+  position: relative; 
+  font-size: 200%;
+}
+
+h4 {
+  position: relative; 
+  font-size: 100%;
+  color: grey;
+  top: -20%;
+  font-weight: 200;
+  padding-left: .2%;
+}
+
+p {
+  padding: 20px;
+  line-height: 25px;
+  width: 65%;
+}
+
+video {
+  height: 100% !important;
+  position: absolute;
+  margin: 0 auto;
+  display: none;
+  top: 0px;
+  padding: 0px;
+}
+
+.instamage {
+  height: 90%;
+  max-width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0px;
+}
+
+.map {
+  width: 85%;
+  height: 40%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#mapoverlay {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.location {
+  display: none;
+}
+
+.mediatype {
+  display: none;
+}
+
+#url {
+  display: none;
+}
