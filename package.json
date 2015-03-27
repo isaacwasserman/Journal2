@@ -1,0 +1,28 @@
+{
+  "name": "dictapi",
+  "version": "0.0.1",
+  "description": "A simple api for retrieving definitions",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "body-parser": "~1.8.1",
+    "jade": "1.8.x",
+    "instagram-node": "0.5.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeekw/dictapi"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
