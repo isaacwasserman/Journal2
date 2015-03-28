@@ -1,6 +1,6 @@
 var init = function(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  window.location.href = '/m';
+  window.location.href = 'http://m.cr.raritea.com';
   }
   var url = document.getElementById('url').innerHTML;
   document.getElementById('photodiv').style.background = 'url(' + url + ')';
