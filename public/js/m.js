@@ -1,0 +1,1 @@
+document.getElementById('photo').style.background = 'url(' + document.getElementById('src').innerHTML + ')';

@@ -1,0 +1,14 @@
+html
+  head
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no, maximum-scale=1', media='(device-height: 568px)')
+    link(rel="stylesheet", href="css/m.css")
+    style #photo {height: 60%; background-size: contain !important; background-repeat: no-repeat !important; background-position: center center !important; background-color: black !important;}img {height: 100%;} body{overflow: hidden; margin:0px; font-family: sans-serif;} #title {color:#517fa4; background-color:white; padding: 5px; height:10%; min-height: 70px; -webkit-filter: drop-shadow(2px 2px 20px black);} #src {display: none;} #caption {background-color: white; -webkit-filter: drop-shadow(2px 2px 20px black); height:30%; position: relative; top: -22px;} #caption h4 {padding: 15px;} #user {line-height:0px}
+  body
+    div#title
+      h1#user= user
+      h4#location= location
+    div(id="photo")
+    div#caption
+      h4= caption
+    p#src= latest
+    script(src="js/m.js")

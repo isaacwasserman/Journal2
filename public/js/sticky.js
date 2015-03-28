@@ -1,4 +1,7 @@
 var init = function(){
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  window.location.href = '/m';
+  }
   var url = document.getElementById('url').innerHTML;
   document.getElementById('photodiv').style.background = 'url(' + url + ')';
   document.getElementById('map').offsetWidth = 'calc(100% - ' + document.getElementById('not').style.height + ')';
